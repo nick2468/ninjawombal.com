@@ -95,6 +95,12 @@ GitHub Pages issues the certificate after DNS points at it, usually within an ho
 
 **The page shows Porkbun's parking page.** A parking record is still there. Delete it.
 
+**No certificate arrives, and Enforce HTTPS stays greyed out.** GitHub may not retry when
+the custom domain was saved before DNS pointed at it. That happened on 2026-11-03. Remove
+the custom domain in Settings > Pages, save, then add `ninjawombal.com` back. GitHub
+requests the certificate again, and it arrived within two minutes. GitHub records the
+change as two commits to `CNAME`, so pull afterwards.
+
 **Settings > Pages says "DNS check unsuccessful".** DNS takes a while to spread. Wait,
 then press **Check again**. If the CNAME file was deleted, the custom domain was lost with
 it: put `ninjawombal.com` back in Settings > Pages > Custom domain.

@@ -16,12 +16,12 @@
 <meta property="og:title" content="Nick Walker">
 <meta property="og:description" content="I design and build software in Queensland, Australia: data tooling, games, puzzles and tools for learning.">
 <meta property="og:url" content="https://ninjawombal.com/">
-<meta property="og:image" content="https://ninjawombal.com/og.png">
+<meta property="og:image" content="https://ninjawombal.com/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#1F6F68">
 
@@ -71,7 +71,7 @@ header{border-bottom:1px solid var(--line)}
   gap:8px 24px;padding-block:16px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-weight:650;font-size:17px;
   color:var(--text);text-decoration:none}
-.brand svg{width:28px;height:28px;flex:none}
+.brand img{width:32px;height:32px;flex:none;border-radius:50%;border:1px solid var(--line)}
 .nav ul{display:flex;flex-wrap:wrap;gap:20px;margin:0;padding:0;list-style:none}
 .nav a{text-decoration:none;font-size:15px}
 .nav a:hover{text-decoration:underline}
@@ -79,7 +79,14 @@ header{border-bottom:1px solid var(--line)}
 main{padding-block:clamp(40px,8vw,88px) 72px}
 section{margin-bottom:72px}
 
+.hero{display:grid;gap:36px;align-items:center}
+@media (min-width:760px){.hero{grid-template-columns:1fr minmax(240px,340px);gap:56px}}
 .hero h1{font-size:clamp(38px,6.4vw,64px);margin-bottom:18px}
+.mascot{margin:0;justify-self:center;max-width:300px}
+@media (min-width:760px){.mascot{max-width:none}}
+.mascot img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);
+  box-shadow:var(--shadow)}
+.mascot figcaption{margin-top:10px;font-size:14px;color:var(--muted);text-align:center}
 .lede{font-size:clamp(19px,2.3vw,23px);line-height:1.5;color:var(--muted);max-width:640px;margin-bottom:28px}
 .lede strong{color:var(--text);font-weight:600}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
@@ -136,7 +143,7 @@ footer p{margin:0}
 
 <header><div class="wrap nav">
   <a class="brand" href="/">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><text x="16" y="21.5" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14" font-weight="700" fill="var(--accent-text)">NW</text></svg>
+    <img src="/img/ninja-wombal-face.jpg" alt="" width="32" height="32">
     Nick Walker
   </a>
   <nav aria-label="Site"><ul>
@@ -149,6 +156,7 @@ footer p{margin:0}
 <main class="wrap">
 
 <section class="hero" aria-labelledby="hello">
+  <div>
   <h1 id="hello">Hi, I'm Nick Walker.</h1>
   <p class="lede">I design and build software in <strong>Queensland, Australia</strong>.
     Most of it is data tooling. The rest is games, puzzles and tools for learning,
@@ -164,6 +172,12 @@ footer p{margin:0}
       LinkedIn
     </a>
   </div>
+  </div>
+  <figure class="mascot">
+    <img src="/img/ninja-wombal.jpg" width="720" height="960"
+      alt="A furry wombal puppet dressed as a ninja: black hood and mask, a sword in each paw and throwing stars on its belt.">
+    <figcaption>The Ninja Wombal, who gives this site its name.</figcaption>
+  </figure>
 </section>
 
 <section aria-labelledby="about-head">

@@ -10,9 +10,11 @@ branch at **https://ninjawombal.com**, and `www.ninjawombal.com` redirects there
 | Path | What |
 |---|---|
 | `index.html` | The whole page, with its styles inline. |
-| `favicon.svg` | The browser tab icon: NW on teal. |
+| `img/ninja-wombal.jpg` | The Ninja Wombal, the site's mascot, shown beside the intro. |
+| `img/ninja-wombal-face.jpg` | His face, cropped, for the round icon beside the name in the header. |
+| `favicon.png` | The browser tab icon: the same face crop. |
 | `apple-touch-icon.png` | The icon an iPhone or iPad uses for a Home Screen link. |
-| `og.png` | The picture a link shows when it is pasted into LinkedIn, Slack or a message. |
+| `og.jpg` | The picture a link shows when it is pasted into LinkedIn, Slack or a message. |
 | `CNAME` | Tells GitHub Pages which domain this site answers on. Do not delete it. |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are, without Jekyll. |
 

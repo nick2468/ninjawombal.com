@@ -71,7 +71,7 @@ header{border-bottom:1px solid var(--line)}
   gap:8px 24px;padding-block:16px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-weight:650;font-size:17px;
   color:var(--text);text-decoration:none}
-.brand img{width:32px;height:32px;flex:none;border-radius:50%;border:1px solid var(--line)}
+.brand svg{width:28px;height:28px;flex:none}
 .nav ul{display:flex;flex-wrap:wrap;gap:20px;margin:0;padding:0;list-style:none}
 .nav a{text-decoration:none;font-size:15px}
 .nav a:hover{text-decoration:underline}
@@ -81,6 +81,13 @@ section{margin-bottom:72px}
 
 .hero{display:grid;gap:36px;align-items:center}
 @media (min-width:760px){.hero{grid-template-columns:1fr minmax(240px,340px);gap:56px}}
+.hero-text{position:relative}
+.portrait{display:block;width:120px;height:auto;aspect-ratio:1;border-radius:8px;
+  border:1px solid var(--line);box-shadow:var(--shadow);margin-bottom:24px}
+/* With room to spare, the photo hangs in the left margin, level with the heading. */
+@media (min-width:1300px){
+  .portrait{position:absolute;top:6px;right:calc(100% + 28px);width:150px;margin:0}
+}
 .hero h1{font-size:clamp(38px,6.4vw,64px);margin-bottom:18px}
 .mascot{margin:0;justify-self:center;max-width:300px}
 @media (min-width:760px){.mascot{max-width:none}}
@@ -143,7 +150,7 @@ footer p{margin:0}
 
 <header><div class="wrap nav">
   <a class="brand" href="/">
-    <img src="/img/ninja-wombal-face.jpg" alt="" width="32" height="32">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><text x="16" y="21.5" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14" font-weight="700" fill="var(--accent-text)">NW</text></svg>
     Nick Walker
   </a>
   <nav aria-label="Site"><ul>
@@ -156,7 +163,8 @@ footer p{margin:0}
 <main class="wrap">
 
 <section class="hero" aria-labelledby="hello">
-  <div>
+  <div class="hero-text">
+  <img class="portrait" src="/img/nick-walker.jpg" width="400" height="400" alt="Nick Walker, smiling, in a grey jumper over a white collar.">
   <h1 id="hello">Hi, I'm Nick Walker.</h1>
   <p class="lede">I design and build software in <strong>Queensland, Australia</strong>.
     Most of it is data tooling. The rest is games, puzzles and tools for learning,

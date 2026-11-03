@@ -11,8 +11,8 @@ branch at **https://ninjawombal.com**, and `www.ninjawombal.com` redirects there
 |---|---|
 | `index.html` | The whole page, with its styles inline. |
 | `img/ninja-wombal.jpg` | The Ninja Wombal, the site's mascot, shown beside the intro. |
-| `img/ninja-wombal-face.jpg` | His face, cropped, for the round icon beside the name in the header. |
-| `favicon.png` | The browser tab icon: the same face crop. |
+| `img/nick-walker.jpg` | My photo. On a wide screen it hangs in the margin left of the intro. |
+| `favicon.png` | The browser tab icon: the Ninja Wombal's face. |
 | `apple-touch-icon.png` | The icon an iPhone or iPad uses for a Home Screen link. |
 | `og.jpg` | The picture a link shows when it is pasted into LinkedIn, Slack or a message. |
 | `CNAME` | Tells GitHub Pages which domain this site answers on. Do not delete it. |
